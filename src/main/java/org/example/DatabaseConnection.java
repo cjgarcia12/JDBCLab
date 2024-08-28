@@ -6,7 +6,7 @@ public class DatabaseConnection {
     public Connection connect() {
         Connection connection = null;
         try {
-            String url = "jdbc:sqlite:/Users/cjgarcia/Desktop/CTAC/fullstack103/forFun/JDBCLab/src/bookstore.db";
+            String url = "jdbc:sqlite:src/bookstore.db";
             connection = DriverManager.getConnection(url);
             System.out.println("Connected to database");
         } catch (SQLException e) {
